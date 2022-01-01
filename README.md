@@ -1,11 +1,12 @@
 # TFT_Analysis
 
-The purpose of this project is to identify meta trends in the game of Team Fight Tactics by Riot Games and to then utilize that information to improve an individual players ladder ranking. The stack used for this project included Postgresql as my database to store game information through Rest API calls, PySpark to perform transformations on the dataframe and perform analysis, and tableau public to create visualizations and dashboards to showcase the correlations between traits/units with player performance. 
+The purpose of this project is to help players understand trends in the current meta of Team Fight Tactics. Information provided will include an easy to ingest dashboard with key trends in players habits of selecting certain champions, traits, items, and compositions along with their correlation to getting a top 4 placement. The end user will be able to apply date filters to get the appropriate data set they want information for. This information will be very useful for players as they will get a sense of what is currently strong to play, what items people are building with success, and what champions are too contested and to avoid. This will help players use Riot's team builder tool to begin building the right composition for them.
 
-## Step 1 - Obtain the Data
+Data is obtained from Riot's API and includes ranked games from players in North America and stored in a Postgres database. Once match data is extracted from the API, it undergoes a transformation using Pandas/Pyspark to deliver a clean dataset which is then saved as a csv to be used by Tableau - Public Edition for the dashboard.
 
-## Step 2 - Clean Data
+## Visual Analysis of Trends
 
-## Step 3 - Perform Analysis
-
-## Step 4 - Create Visualizations
+### November 4 - November 16
+![Total_Champion_plays](/images/total_champ_usage.png)
+![Average_Champion_plays](/images/average_champ_usage.png)
+![Correlation_Champions](/images/correlation_placement_champion.png)
